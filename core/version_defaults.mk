@@ -27,6 +27,8 @@
 #     SECURITY_PATCH
 #
 
+export SPRING_VERSION := $(PLATFORM_VERSION)$(shell date -u +%Y%m%d)
+
 # Look for an optional file containing overrides of the defaults,
 # but don't cry if we don't find it.  We could just use -include, but
 # the build.prop target also wants INTERNAL_BUILD_ID_MAKEFILE to be set
